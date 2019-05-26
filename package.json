@@ -4,7 +4,13 @@
   "description": "The source code for the .NET Day Switzerland 2019 talk 'TypeScript - The unsung hero of modern web development'",
   "author": "Jonathan Ziller <jonathan.ziller@gmail.com> (https://github.com/MrWolfZ)",
   "license": "MIT",
+  "scripts": {
+    "nswag": "nswag swagger2tsclient /input:api.yaml /output:7-consuming-apis.ts"
+  },
   "dependencies": {
     "typescript": "3.4.5"
+  },
+  "devDependencies": {
+    "nswag": "12.3.1"
   }
 }

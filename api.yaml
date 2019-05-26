@@ -9,6 +9,7 @@ paths:
   /books:
     get:
       summary: "Get all books"
+      operationId: "getAllBooks"
       responses:
         200:
           description: "successful operation"
@@ -18,6 +19,7 @@ paths:
               $ref: "#/definitions/Book"
     post:
       summary: "Add a new book"
+      operationId: "addBook"
       parameters:
       - in: "body"
         name: "body"
@@ -32,6 +34,7 @@ paths:
   /book/{bookId}:
     get:
       summary: "Get book by ID"
+      operationId: "getBookById"
       parameters:
       - name: "bookId"
         in: "path"
@@ -62,4 +65,4 @@ definitions:
         type: "string"
       completed:
         type: "boolean"
-        default: true
+        default: false
