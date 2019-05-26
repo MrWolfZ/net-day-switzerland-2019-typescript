@@ -1,0 +1,10 @@
+{
+  "name": "net-day-switzerland-2019-typescript",
+  "version": "1.0.0",
+  "description": "The source code for the .NET Day Switzerland 2019 talk 'TypeScript - The unsung hero of modern web development'",
+  "author": "Jonathan Ziller <jonathan.ziller@gmail.com> (https://github.com/MrWolfZ)",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "3.4.5"
+  }
+}

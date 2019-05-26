@@ -1,0 +1,65 @@
+swagger: "2.0"
+info:
+  description: "Example API for the .NET Day Switzerland 2019 talk 'TypeScript - The unsung hero of modern web development'"
+  version: "1.0.0"
+  title: ".NET Day Switzerland 2019 TypeScript Example API"
+host: "www.example.com"
+basePath: "/api/v1"
+paths:
+  /books:
+    get:
+      summary: "Get all books"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Book"
+    post:
+      summary: "Add a new book"
+      parameters:
+      - in: "body"
+        name: "body"
+        required: true
+        schema:
+          $ref: "#/definitions/Book"
+      responses:
+        201:
+          description: "successful operation"
+        400:
+          description: "Invalid input"
+  /book/{bookId}:
+    get:
+      summary: "Get book by ID"
+      parameters:
+      - name: "bookId"
+        in: "path"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Book"
+        404:
+          description: "book not found"
+definitions:
+  Book:
+    type: "object"
+    required:
+      - id
+      - title
+      - author
+    properties:
+      id:
+        type: "string"
+      title:
+        type: "string"
+      description:
+        type: "string"
+      author:
+        type: "string"
+      completed:
+        type: "boolean"
+        default: true
