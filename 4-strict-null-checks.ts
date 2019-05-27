@@ -41,3 +41,4 @@ interface Book {
 
 const books: Book[] = []
 const bookByMe = books.find(b => b.author === 'Jon')
+console.log(bookByMe.title)
