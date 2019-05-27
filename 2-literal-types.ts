@@ -1,3 +1,5 @@
+// 2 - literal types
+
 let n1 = 1;
 n1 = 2;
 

@@ -1,3 +1,5 @@
+// 3 - union and intersection types
+
 type StringOrNumber = string | number;
 
 let stringOrNumber = 'foo';

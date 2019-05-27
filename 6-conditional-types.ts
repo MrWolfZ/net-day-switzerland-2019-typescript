@@ -1,3 +1,5 @@
+// 6 - conditional types
+
 interface Boxed<T> {
   __boxed: '';
   value: T;

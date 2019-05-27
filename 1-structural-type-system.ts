@@ -1,3 +1,5 @@
+// 1 - structural type system
+
 interface Action {
   type: string;
 }

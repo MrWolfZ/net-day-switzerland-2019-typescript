@@ -1,3 +1,5 @@
+// 4 - strict null checks
+
 let x1 = 2;
 x1 = null;
 x1 = undefined;

@@ -1,3 +1,5 @@
+// 5 - mapped types
+
 export type Partial<T> = {
   [prop in keyof T]?: T[prop];
 };
