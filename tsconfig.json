@@ -4,7 +4,6 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "strict": false,
-    "strictPropertyInitialization": false,
     "noUnusedParameters": false,
     "noUnusedLocals": false,
     "module": "es2015",
