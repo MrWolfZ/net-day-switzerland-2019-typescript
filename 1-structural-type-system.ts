@@ -13,6 +13,7 @@ function handleAction(action: Action) {
 }
 
 handleAction(new MyAction());
+handleAction({ type: '' });
 
 
 
@@ -78,5 +79,15 @@ class BookService {
   }
 }
 
-const bookService = new BookService();
+const mockRepository: BookRepository = {
+  getBookById() {
+    return {
+      id: 'testId',
+      author: '',
+      title: 'testTitle'
+    }
+  }
+}
+
+const bookService = new BookService(mockRepository);
 bookService.getBookTitleByBookId('testId') === 'testTitle'

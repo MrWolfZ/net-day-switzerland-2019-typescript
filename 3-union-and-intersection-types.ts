@@ -2,7 +2,7 @@
 
 type StringOrNumber = string | number;
 
-let stringOrNumber = 'foo';
+let stringOrNumber: StringOrNumber = 'foo';
 
 
 
@@ -42,20 +42,20 @@ interface Pet {
   kind: string;
 }
 
-let person = {
+let person: Person = {
   name: 'Max',
   age: 20,
   occupation: 'student',
 };
 
-let pet = {
+let pet: Pet = {
   name: 'Tiger',
   age: 'old',
   kind: 'cat',
 }
 
 let personOrPet: Person | Pet = person;
-personOrPet = pet;
+personOrPet = pet as any;
 
 let personOrPetName = personOrPet.name;
 let personOrPetAge = personOrPet.age;
